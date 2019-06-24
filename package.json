@@ -1,5 +1,7 @@
 {
   "name": "angular-test2",
+  "nombre": "Chaim Correa",
+  "fecha": "24/06/2019",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
