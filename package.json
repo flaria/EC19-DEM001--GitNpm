@@ -1,11 +1,15 @@
 {
   "name": "angular-test2",
+
   "nombre": "Guillermo MacBeath",
   "fecha": "24/06/2019",
   "version": "0.0.0",
   "nombre": "Ricardo Rodriguez Flores",
   "fecha": "24/06/2019",
-  "scripts": {
+  "nombre":"Uriel MIguel Hernandez Romano",
+  "fecha":"24/06/2019",
+  "version": "1.0.0",
+    "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
