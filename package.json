@@ -1,6 +1,8 @@
 {
   "name": "angular-test2",
   "version": "0.0.0",
+  "nombre": "Eduardo Canizales Torres",
+  "fecha": "24/06/2019",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
