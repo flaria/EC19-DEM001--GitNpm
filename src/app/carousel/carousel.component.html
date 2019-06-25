@@ -1,0 +1,28 @@
+<p-carousel headerText="Pokemones" [value]="cars">
+  <ng-template let-car pTemplate="item">
+    <div class="ui-grid ui-grid-responsive">
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-12"><img src={{car.photo}}  width="150"></div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6">Nombre:</div>
+        <div class="ui-grid-col-6">{{car.name}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6">Año:</div>
+        <div class="ui-grid-col-6">{{car.year}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6">Motivo:</div>
+        <div class="ui-grid-col-6">{{car.reason}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-12">
+          <button type="button" pButton icon="pi pi-search" (click)="selectCar(car)"></button>
+        </div>
+      </div>
+    </div>
+  </ng-template>
+</p-carousel>
+
+<h3>Liga: <a href="https://github.com/flaria/EC19-DEM001-GitNpm/tree/Demo-GabrielBarrientos-20190625">Actividad Integradora</a></h3>
