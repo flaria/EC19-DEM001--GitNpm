@@ -7,6 +7,7 @@ import { JuegosComponent } from './juegos/juegos.component';
 
 import {CarouselModule} from 'primeng/carousel';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import {ToastModule} from 'primeng/components/toast/toast';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     CarouselModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ToastModule
   ],
   providers: [],
   bootstrap: [AppComponent]
