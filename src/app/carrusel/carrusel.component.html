@@ -1,0 +1,22 @@
+<p-carousel headerText="Personajes" [value]="items">
+  <ng-template let-item pTemplate="item">
+    <div class="ui-grid-row">
+      <div class="ui-grid-col-12"><img src="{{item.foto}}" ></div>
+    </div>
+    <div class="ui-grid ui-grid-responsive">
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6"><b>Nombre</b></div>
+        <div class="ui-grid-col-6">{{item.nombre}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6"><b>Nacimiento</b></div>
+        <div class="ui-grid-col-6">{{item.ano}}</div>
+      </div>
+      <div class="ui-grid-row">
+        <div class="ui-grid-col-6"><b>Motivo</b></div>
+        <div class="ui-grid-col-6">{{item.motivo}}</div>
+      </div>
+    </div>
+
+  </ng-template>
+</p-carousel>
