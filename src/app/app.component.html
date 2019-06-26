@@ -1,34 +1,27 @@
 <!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
-</div>
-
 <div class="content-section implementation">
 
-  <p-toast [style]="{marginTop: '80px'}"></p-toast>
+    <p-toast [style]="{marginTop: '80px'}"></p-toast>
 
-  <p-carousel headerText="Equipos" [value]="equipos">
-      <ng-template let-equipo pTemplate="item">
-          <div class="ui-grid ui-grid-responsive">
-              <div class="ui-grid-row">
-                  <div class="ui-grid-col-12"><img src="assets/teams/wtt/{{equipo.archivo}}.png" 
-                      width="120">
-                  </div>
-              </div>
-              <div class="ui-grid-row">
-                  <div class="ui-grid-col-6">Nombre</div>
-                  <div class="ui-grid-col-6">{{equipo.nombre}}</div>
-              </div>
-              <div class="ui-grid-row">
-                  <div class="ui-grid-col-6">Liga</div>
-                  <div class="ui-grid-col-6">{{equipo.liga}}</div>
-              </div>
-          </div>
-      </ng-template>
-  </p-carousel>
+    <p-carousel headerText="Equipos" [value]="equipos">
+        <ng-template let-equipo pTemplate="item">
+            <div class="ui-grid ui-grid-responsive">
+                <div class="ui-grid-row">
+                    <div class="ui-grid-col-12">
+                        <img src="assets/teams/wtt/{{equipo.archivo}}.png" class="escudo" />
+                    </div>
+                </div>
+                <div class="ui-grid-row">
+                    <div class="ui-grid-col-6">Nombre</div>
+                    <div class="ui-grid-col-6">{{equipo.nombre}}</div>
+                </div>
+                <div class="ui-grid-row">
+                    <div class="ui-grid-col-6">Liga</div>
+                    <div class="ui-grid-col-6">{{equipo.liga}}</div>
+                </div>
+            </div>
+        </ng-template>
+    </p-carousel>
 </div>
 
 <router-outlet></router-outlet>

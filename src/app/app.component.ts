@@ -30,7 +30,7 @@ export class AppComponent {
     }
 
     selectCar(equipo: Equipo) {
-        this.messageService.add({severity: 'info', summary: 'Car Selected', 
+        this.messageService.add({severity: 'info', summary: 'Equipo Seleccionado', 
           detail: 'nombre:' + equipo.nombre});
     }
 }
